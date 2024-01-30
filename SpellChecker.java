@@ -56,7 +56,7 @@ public class SpellChecker {
 		String closestoWord = ""; 
 		String s = "";
 		for (int i = 0; i < dictionary.length; i++) {
-			if(levenshtein(word, dictionary[i]) <= cur) {
+			if(levenshtein(word, dictionary[i]) < cur) {
 				cur = levenshtein(word, dictionary[i]);
 				closestoWord = dictionary[i]; 
 			}
