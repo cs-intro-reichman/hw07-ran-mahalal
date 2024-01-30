@@ -52,7 +52,7 @@ public class SpellChecker {
 
 
 	public static String spellChecker(String word, int threshold, String[] dictionary) {
-		int cur = threshold;
+		int cur = threshold + 1;
 		String closestoWord = ""; 
 		String s = "";
 		for (int i = 0; i < dictionary.length; i++) {
