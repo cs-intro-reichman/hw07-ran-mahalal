@@ -56,6 +56,7 @@ public class SpellChecker {
 		String closestoWord = ""; 
 		String s = "";
 		for (int i = 0; i < dictionary.length; i++) {
+			// #feedback - in order to avoid calling to levenshtein twice (as recursive functions can be inefficient), it is better to assign the result to a variable and then use the variable only.
 			if(levenshtein(word, dictionary[i]) < cur) {
 				cur = levenshtein(word, dictionary[i]);
 				closestoWord = dictionary[i]; 
