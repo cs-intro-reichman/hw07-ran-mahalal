@@ -42,6 +42,7 @@ public class HashTagTokenizer {
         }
  
         int N = hashtag.length();
+		// #feedback - you should assign to a new variable.
 		hashtag.toLowerCase();
 		
         for (int i = 1; i <= N; i++) {
